@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal das Formas: Aventura Geométrica</title>
+    <link rel="stylesheet" href="/CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Portal das Formas</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Desvende os Mistérios da Geometria!</h2>
+            <p>Explore o mundo das formas, aprenda conceitos e domine a arte de calcular áreas!</p>
+
+            <div class="opcoes">
+                <a href="triangulo.html" class="botao forma-triangulo">
+                    <img src="assets/images/icones/triangle.png" alt="Triângulo">
+                    <span>Triângulo</span>
+                </a>
+
+                <a href="quadrado.html" class="botao forma-quadrado">
+                    <img src="assets/images/icones/square.png" alt="Quadrado">
+                    <span>Quadrado</span>
+                </a>
+
+                <a href="circulo.html" class="botao forma-circulo">
+                    <img src="assets/images/icones/circle.png" alt="Círculo">
+                    <span>Círculo</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section class="hero">
+            <h2>{NOME DA FORMA}</h2>
+            <p>Explore os segredos e as propriedades dessa forma geométrica fascinante!</p>
+
+            <img src="assets/images/{NOME DA FORMA}_exemplo.jpg" alt="{NOME DA FORMA} Exemplo" class="exemplo-forma">
+
+            <div class="informacoes">
+                <h3>Detalhes</h3>
+                <ul>
+                    <li>Definição: {DEFINIÇÃO DA FORMA}</li>
+                    <li>Propriedades: {LISTA DE PROPRIEDADES DA FORMA}</li>
+                    <li>Fórmulas de Área: {FÓRMULAS DE ÁREA DA FORMA}</li>
+                    <li>Curiosidades: {CURIOSIDADES SOBRE A FORMA}</li>
+                </ul>
+            </div>
+
+            <div class="calculadora">
+                <h3>Calculadora de Área</h3>
+                <form id="formulario-area">
+                    <label for="valor1">{NOME DO VALOR 1}:</label>
+                    <input type="number" id="valor1" name="valor1" required>
+
+                    <label for="valor2">{NOME DO VALOR 2} (se necessário):</label>
+                    <input type="number" id="valor2" name="valor2">
+
+                    <button type="submit">Calcular Área</button>
+                </form>
+
+                <div id="resultado-area">
+                    <h4>Resultado:</h4>
+                    <p id="valor-area"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Portal das Formas</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
